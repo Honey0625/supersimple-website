@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="SIT774 Team">
+    <meta name="description" content="Bootstrap Example">
+    <title>Bootstrap</title>
+    <!--Bootstrap css files--->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="nav navbar navbar-expand-sm bg-black justify-content-center nav-fill">
+        <ul class="nav justify-content-center">
+
+            <li class="nav-item">
+                <a class="nav-link " href="#" style=color:white>Introduction</a>
+            </li>
+            <li class="nav-itemms">
+                <a class="nav-link" href="#" style=color:white>Butterfly Pictures(Thumbnails)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style=color:white>Butterfly Pictures & Text</a>
+            </li>
+            <li class="nav-items">
+                <a class="nav-link " href="#" style=color:white>Butterfly Table</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!---Body-->
+    <div class="container-fluid " style=" background-color: rgb(100, 204, 241)" ;>
+        <div class="container mx-5">
+            <h1 class="display-1">Butterflies of the World</h1>
+            <p class="lead">
+                some lovely brightly coloured butterfiles
+            </p>
+        </div>
+    </div>
+    <div class="pt-4 pb-1 p-5 text-left">
+        <h2 id="Introduction">Introduction</h2>
+        <p> This is the simple page that shows a number of bootstrap components and the styles they provide to enhance
+            plain
+            HTML content- while also supporting a respective dispaly(screen rezing).<br>
+            <br>
+            Firstly,at the top of the page,within a <text
+                style="color:purple;">&lt;header&gt;.........&lt;header&gt;</text>section,is a <b>navigation</b> list
+            using
+            the Bootstrap <text style="color:purple;">&lt;nav&gt;.........&lt;nav&gt;</text> component.Next is the
+            <text style="color:purple;">&lt;body&gt;.........&lt;body&gt;</text> section that contains a <b>banner</b>(a
+            title of the page and leading sentence,all
+            with a
+            blue
+            background),and the <b>content</b> of the page.The content contains some pretty pictures of
+            butterflies(using different
+            layouts).As well as a bootstrap formated table with content.The final section is <text
+                style="color:purple;">&lt;footer&gt;.........&lt;footer&gt;</text>.
+        </p>
+    </div>
+    <div class="" container>
+        <p class="text-end">
+            <a href="bootstrap.html#top">Top</a>
+        </p>
+    </div>
+    <div class="pt-2 p-5 text-left">
+        <h2 id="thumbnails">Butterfly Pictures (Thumbnails)</h2>
+        <p>Below are some pretty pictures of butterflies,downloaded from the website <a
+                href="https:unsplash.com/">unsplash</a>,
+            with beautiful and freely-usable images. These images are placed in a single bootstrap <text
+                style="color:purple;"></text>row</text> composed of three columns (using a combined <text
+                style="color:purple;">col-sm-4 col-12</text>, where the <i>col-sm-4</i> forces 3 images to be in a row
+            on all screens sizes <b>except</b> very small ones (&lt;576px) where the <i>col-12</i> forces the images to
+            use all 12 column grid units and stack each image ontop of each other). Each image has the class <text
+                style="color:purple;">img-thumbnail</text> applied to it, allowing it resize to the size of the column.
+        </p>
+        <table>
+            <tr>
+                <td class="row-sm-4 col-12 ">
+
+                    <img src="images/ashley-rich-OI-udP59p98-unsplash.jpg" alt="ashley " class="img-thumbnail">
+                    <img src="images/daniel-klein-uNNPbsCTksk-unsplash.jpg" alt="daniel " class="img-thumbnail">
+                    <img src="images/ed-van-duijn-oIUUA_8zZoU-unsplash.jpg" alt="ed van " class="img-thumbnail">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <p class="text-end">
+            <a href="bootstrap.html#top">Top</a>
+        </p>
+    </div>
+    <div class="pt-1 p-5 text-right">
+        <h2 id="Butterfly Pictures with Text">Butterfly Pictures with Text</h2>
+        <p>The following image and text is held within a new <text style="color:purple;">div</text> which has the class
+            attributes <text style="color:purple;">p-4 mb-4 bg-light rounded</text>, to set the padding,margin-below,
+            background colour and corner shape,repsectively. It holds a <text style="color:purple;">row</text>,with the
+            image is assigned to a <text style="color:purple;"> col-sm-4 </text>column and the text assigned to a single
+            <text style="color:purple;">col-sm-8</text>;
+            allowing it to span the remaining 8 column units. Added to each of these two columns is the <text
+                style="color:purple;">col-12</text>,which says when the screen is smaller than 576px, it will then use
+            all 12 columns grids for each image and text, alowing them to be stacked on top of each other.
+        </p>
+    </div>
+    <div class="pt-1 p-5">
+        <div class=" contain p-5 mb-3 bg-light rounded">
+            <table>
+                <tr>
+                    <td class="col-sm-4 col-12"> <img
+                            src="images/erin-minuskin-LGaneK6yG9M-unsplash.jpg"
+                            class="img-fluid rounded" alt="" width="400" height="400"></td>
+                    <td class="col-sm-8 col-12">
+                        <p class="lead">This is a picture of a butterfly by Erin Minuskin</p>
+                        <p class="small">Here, the <text style="color:purple;">class img-fluid rounded</text> has been
+                            applied to the image. The the title
+                            above uses <text style="color:purple;">&lt;p class="lead"&gt;</text> to make the text
+                            standout. While this text uses the <text style="color:purple;">p class="small"</text>to
+                            distinguish it from the normal paragraphs.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pt-1 p-5 text-left">
+        <p>In the next <text style="color:purple;">row</text> ,as with the one above, with in a new div block we first
+            have the text column has been assigned using a <text style="color:purple;">col-sm-8 col-12</text>, followed
+            by a image held in a column assigned a class<text style="color:purple;">col-sm-4 col-12</text>; reversing
+            the order shown in the previous row.
+        </p>
+    </div>
+    <div class="pt-1 p-5 text-left">
+        <div class=" contain p-5 mb-4 bg-light rounded">
+            <table>
+                <tr>
+                    <td class="col-sm-8 col-12">
+                        <p class="lead">This is a picture of a butterfly by <b>Brandon Green</b></p>
+                        <p class="small">Another picture of a beautiful butterfly that has the class <text
+                                style="color:purple;"> img-fluid rounded-pill</text> applied to the image.</p>
+                    <img
+                            src="images/krzysztof-niewolny-f8JYQPq45uI-unsplash.jpg"
+                            class="img-fluid rounded-pill" alt="" width="400" height="400"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pt-1 p-5 text-left">
+        <p>In the final <text style="color:purple;">row</text> use the div block controls as used in the first row.
+        </p>
+    </div>
+    <div class="pt-1 p-5 text-left">
+        <div class=" contain p-5 mb-4 bg-light rounded">
+            <table>
+                <tr>
+                    <td class="col-sm-8 col-12">
+                        <p class="lead">This is a picture of a butterfly by Andra C Taylor Jr.</p>
+                        <p class="small">Here,the class <text
+                                style="color:purple;"> img-fluid rounded-circle</text>has been applied to the image.</p>
+                    <img src="images/andra-c-taylor-jr-IC8zpKz6qF0-unsplash.jpg"
+                            class="img-fluid rounded-circle" alt="" width="400" height="400"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <p class="text-end">
+            <a href="bootstrap.html#top">Top</a>
+        </p>
+    </div>
+    <div class=" contain p-5 mb-4 bg-light rounded">
+        <p>
+        <h2 id="UK Butterfly Data">UK Butterfly Data</h2>
+        </p>
+        <p>In this last section of the page, we have a nice table with some data from the 2021 United kingdom Butterfly
+            Monitoring Scheme(UKBMS).Here the table is styled with the bootstrap classes
+            <text style="color:purple;"> table table-striped table-hover</text>, and the <text 177
+                style="color:purple;">table-success</text> applied to the table header <text 178
+                style="color:purple;">thead</text>.Note,the table also includes a caption.
+        </p>
+        <div class="pt-1 p-6 text-left">
+            <table class="table table-striped table-hover">
+                <thead class="thead-dark bg-light">
+                    
+                    <tr style=" background-color: rgb(100, 204, 241)" ;>
+                        <th rowspan="1">Species</th>
+                        <th rowspan="1">Start Year</th>
+                        <th colspan="1">No.years with Index in 2021</th>
+                        <th rowspan="1">No, sites monitored in 2021</th>
+                        <th rowspan="1">2021 rank</th>
+                        <th rowspan="1">%change 2020-2021</th>
+                    </tr>
+                    
+                </thead>
+                <tr>
+                    <td>Swallowtail</td>
+                    <td>1976</td>
+                    <td>45</td>
+                    <td>16</td>
+                    <td>23</td>
+                    <td>-24</td>
+                </tr>
+                <tr>
+                    <td>Dingy Skipper</td>
+                    <td>1976</td>
+                    <td>46</td>
+                    <td>637</td>
+                    <td>13</td>
+                    <td>-11</td>
+                </tr>
+                <tr>
+                    <td>Grizzled</td>
+                    <td>1976</td>
+                    <td>46</td>
+                    <td>404</td>
+                    <td>31</td>
+                    <td>-17</td>
+                </tr>
+                <tr>
+                    <td>Essex Skipper</td>
+                    <td>1977</td>
+                    <td>45</td>
+                    <td>1078</td>
+                    <td>29</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Small Skipper</td>
+                    <td>1976</td>
+                    <td>46</td>
+                    <td>1918</td>
+                    <td>39</td>
+                    <td>-16</td>
+                </tr>
+                <tr>
+                    <td>Lulworth Skipper</td>
+                    <td>1992</td>
+                    <td>30</td>
+                    <td>23</td>
+                    <td>20</td>
+                    <td>-13</td>
+                </tr>
+                <tr>
+                    <td>Silver-spotted Skipper</td>
+                    <td>1979</td>
+                    <td>43</td>
+                    <td>74</td>
+                    <td>16</td>
+                    <td>-40</td>
+                </tr>
+            </table>
+            <p>ENGLAND Summary of changes table 2021 (extract) <a href="bootstrap.html#https://ukbms.org/">[https://ukbms.org/]</p>
+        </div>
+        <div class="container">
+            <p class="text-end">
+                <a href="bootstrap.html#top">Top</a>
+            </p>
+        </div>
+        <div class="container">
+            <div class="col">
+                <p>This then concludes the content in the <text style="color:purple;">main</text> section of the page.
+                    Note that the end of each content block is a hyperlink back to the <b>Top</b> of the page. It uses
+                    the</text> <text style="color:purple;">&lt;p class="end-task"&gt;</text> to align to the right of the screen.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col">
+                <p> The next and final section is the <text style="color:purple;">footer</text>.</p>
+            </div>
+        </div>
+        <footer class="bg-black text-center text-white">
+            <div>
+                <p>&copy;2023 A webpage footer with important info</p>
+            </div>
+        </footer>
+        <!--Bootstrap Javascript files-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
